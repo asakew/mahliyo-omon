@@ -1,0 +1,20 @@
+$oq: #fff
+$qora: #000
+$moviy: cyan
+$kuk: #0008FF
+
+@mixin oqFon ($bgColor, $colorText)
+	background-color: $bgColor
+	color: $colorText
+
+@mixin qoraFon
+	background-color: $qora
+	color: $oq
+
+*
+	padding: 0
+	margin: 0
+
+body
+	font-size: 1em
+	@include oqFon($oq, black)
